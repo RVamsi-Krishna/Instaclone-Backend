@@ -7,8 +7,8 @@ const cors = require("cors");
 const PORT = process.env.PORT || 8080;
 const {validationResult } = require('express-validator');
 mongoose.connect(
-  // "mongodb+srv://rvk_mongoDB:Rvk_mongoDB@cluster0.nylobhs.mongodb.net/instaclone?retryWrites=true&w=majority",
-  "mongodb://localhost:27017/instaclone",
+  "mongodb+srv://rvk_mongoDB:Rvk_mongoDB@cluster0.nylobhs.mongodb.net/instaclone?retryWrites=true&w=majority",
+  // "mongodb://localhost:27017/instaclone",
   (err) => {
     if (err) console.log(err);
     else console.log("Database Connected");
